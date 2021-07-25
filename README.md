@@ -1,5 +1,7 @@
 # Rails Search Engine with Elastic Search
 
+You can read the blog [here](https://prabinpoudel.com.np/articles/search-engine-with-rails/)
+
 ## Clone the app
 
 ```cmd
