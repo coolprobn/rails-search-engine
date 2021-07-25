@@ -40,4 +40,6 @@ Commands:
     => 5
 ```
 
+## Full working code
 
+"main" branch only includes code required for the basic app setup. Everything related tp app search with full functionality as shown in the tutorial blog is inside the branch "app-search"
