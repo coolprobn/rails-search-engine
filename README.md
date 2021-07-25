@@ -1,5 +1,7 @@
 # Rails Search Engine with Elastic Search
 
+You can read the blog [here](https://prabinpoudel.com.np/articles/search-engine-with-rails/)
+
 ## Clone the app
 
 ```cmd
@@ -42,4 +44,4 @@ Commands:
 
 ## Full working code
 
-"main" branch only includes code required for the basic app setup. Everything related tp app search with full functionality as shown in the tutorial blog is inside the branch "app-search"
+"main" branch only includes code required for the basic app setup. Everything related to app search with full functionality as shown in the tutorial blog is inside the branch "app-search"
