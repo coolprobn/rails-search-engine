@@ -1,24 +1,43 @@
-# README
+# Rails Search Engine with Elastic Search
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Clone the app
 
-Things you may want to cover:
+```cmd
+    $ git clone git@github.com:coolprobn/rails-search-engine.git
+```
 
-* Ruby version
+## App Setup
 
-* System dependencies
+### Install required Gems
 
-* Configuration
+```cmd
+    $ cd rails-search-engine
+    $ bundle install
+```
 
-* Database creation
+### Database
 
-* Database initialization
+From command line:
 
-* How to run the test suite
+`rails db:setup`
 
-* Services (job queues, cache servers, search engines, etc.)
+This will create database, load the schema and seed the database with code inside `db/seeds.rb`
 
-* Deployment instructions
+### Check seeded records
 
-* ...
+Go to rails console `rails c` and check the count of all records, you should have 2 authors, 5 categories and 4 articles.
+
+Commands:
+
+```cmd
+    > Author.count
+    => 2
+    
+    > Article.count
+    => 4
+    
+    > Category.count
+    => 5
+```
+
+
