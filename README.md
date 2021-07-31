@@ -42,4 +42,8 @@ Commands:
     => 5
 ```
 
+## Fully working code
 
+Fully working code is in the branch `app-search`.
+
+You can find the pull request with the changes for app-search [here](https://github.com/coolprobn/rails-search-engine/pull/1)
