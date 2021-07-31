@@ -1,0 +1,31 @@
+<h1>App Search</h1>
+
+<%= form_for search_path, method: :get do |f| %>
+  <p>
+    <%= f.label "Search for" %>
+    <%= text_field_tag :q, params[:q] %>
+    <%= submit_tag "Search", name: nil %>
+  </p>
+<% end %>
+
+<% if params[:q] && @results.blank? %>
+  <p>No results found for <%= params[:q] %></p>
+<% end %>
+
+<% @results.each do |group, records| %>
+  <h3><%= group.titleize %></h3>
+
+  <ul>
+    <% records.each do |record| %>
+      <% record_link = "api/v1/#{group}/#{record['_id']}" %>
+
+      <li>
+        <%= link_to record_link, record_link %>
+
+        <% record['highlight']&.each do |key, snippet| %>
+          <p><%= "#{key} - " %> <%= sanitize(snippet[0]) %></p>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>

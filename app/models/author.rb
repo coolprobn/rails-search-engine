@@ -1,4 +1,6 @@
 class Author < ApplicationRecord
+  include Searchable
+
   has_many :articles
 
   validates :first_name, presence: true

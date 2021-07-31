@@ -1,4 +1,6 @@
 class Article < ApplicationRecord
+  include Searchable
+
   belongs_to :author
 
   has_and_belongs_to_many :categories
